@@ -81,12 +81,14 @@ a {
 .head-container {
     display: flex;
     /* gap: 332px; */
+    
 }
 
 
 .head {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     /* padding-left: 156px;  */
+    
 }
 
 .main-nav {
@@ -135,6 +137,22 @@ a {
         padding-bottom: 24px;
         padding-left: 0;
         padding-right: 0;
+}
+
+.main-navigation-first {
+    padding-bottom: 0;
+    color: #404BBF;
+}
+
+.main-navigation-first::after {
+display: block;
+content: "";
+border-radius: 2px;
+width: 48px;
+height: 4px;
+background-color: #404BBF;
+margin-top: 20px;
+
 }
 
 .main-navigation:active,
