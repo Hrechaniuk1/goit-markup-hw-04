@@ -137,6 +137,7 @@ a {
         padding-bottom: 24px;
         padding-left: 0;
         padding-right: 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -183,6 +184,7 @@ background-color: #404BBF;
     line-height: 1.5;
     color: #434455;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -237,6 +239,7 @@ background-color: #404BBF;
     margin-top: 48px;
     min-width: 169px;
     height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service-button:hover, .service-button:focus {
@@ -293,7 +296,15 @@ background-color: #404BBF;
     border-radius: 4px;
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);
         background: var(--CLOUD, #F4F4FD);
+        position: relative;
         
+}
+
+.icon-feature {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -319,7 +330,7 @@ background-color: #404BBF;
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    
+    padding-bottom: 32px;
 }
 
 
@@ -334,7 +345,34 @@ background-color: #404BBF;
 
 .team-member {
     padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-bottom: 32px; */
+    padding-bottom: 0;
+}
+
+.icon-social {
+fill: #F4F4FD;
+display: block;
+margin: 0 auto;
+
+}
+
+.icon-social-link {
+    padding: 12px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-social-link:hover,
+.icon-social-link:focus {
+    background-color: #31D0AA;
+}
+
+.team-social-list {
+display: flex;
+justify-content: center;
+gap: 24px;
+margin-top: 8px;
 }
 
 
@@ -394,6 +432,7 @@ position: relative;
 
 .portfolio-list-item {
     flex-grow: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -429,13 +468,15 @@ position: relative;
 
 /* footer */
 
-footer {
+.page-foot {
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 100px 0;
+    display: flex;
 }
 
 .foot-container {
     margin-left: 156px;
+    margin-right: 0;
 }
 
 /* .foot-info {
@@ -453,4 +494,22 @@ footer .site-logo {
     letter-spacing: 0.02em;
     line-height: 1.5;
     max-width: 264px;
+}
+
+.social-address {
+    margin-left: 232px;
+}
+
+.footer-social-media-title {
+    color: var(--WHITE, #FFF);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+}
+
+.address-list {
+    gap: 16px;
 }
